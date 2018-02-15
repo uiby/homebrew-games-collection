@@ -1,25 +1,44 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | game_space</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>  
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Default WebGL.json", {onProgress: UnityProgress});
-    </script>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Fill in the Space</title>
+  <link rel="shortcut icon" href="TemplateData/favicon.ico">
+  <link rel="stylesheet" href="TemplateData/style.css">
+  <script src="TemplateData/UnityProgress.js"></script>  
+  <script src="Build/UnityLoader.js"></script>
+  <script>
+  var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Default WebGL.json", {onProgress: UnityProgress});
+  </script>
+  <link rel="stylesheet" href="../css/game-page-layout.css">
+</head>
+<body>
+  <div class="main-box box">
     <div class="webgl-content">
       <div id="gameContainer" style="width: 960px; height: 540px"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-        <div class="title">game_space</div>
+        <div class="title">Fill in the Space</div>
       </div>
     </div>
-  </body>
+  </div>
+
+  <div class="side-box box">
+    <div class="rule-box box">
+      <h2> 操作方法 </h2>
+      <ul>
+        <li> マウスクリック </li>
+      </ul>
+    </div>
+    
+    <div class="introduction-box box">
+      <h2> 紹介 </h2>
+      パズルゲーム．ブロックを動かしてスペースを埋める．
+
+    </div>
+  </div>
+</body>
+
 </html>
